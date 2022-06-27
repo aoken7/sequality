@@ -30,5 +30,3 @@ jobs:
         distribution: 'adopt'
     - name: Grant execution permissions for gradlew
       run: chmod +x gradlew
-    - name: Build with Gradle
-      run: ./gradlew build
