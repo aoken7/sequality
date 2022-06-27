@@ -3,6 +3,7 @@ package sequality;
 import static org.junit.Assert.assertEquals;
 
 import org.junit.Test;
+import junit.framework.Assert;
 
 public class CalculateTest {
   @Test
@@ -17,8 +18,6 @@ public class CalculateTest {
     Calculate calculate = new Calculate();
     int expected = 15;
     assertEquals(expected, calculate.sumOfSeq(1, 5));
-    expected = 3;
-    assertEquals(expected, calculate.sumOfSeq(3, 3));
   }
 
   @Test
@@ -26,8 +25,6 @@ public class CalculateTest {
     Calculate calculate = new Calculate();
     int expected = 15;
     assertEquals(expected, calculate.sumOfOdd(2, 7));
-    expected = 0;
-    assertEquals(expected, calculate.sumOfOdd(2, 2));
   }
 
   @Test
@@ -35,16 +32,12 @@ public class CalculateTest {
     Calculate calculate = new Calculate();
     int expected = 20;
     assertEquals(expected, calculate.sumOfEven(2, 9));
-    expected = 0;
-    assertEquals(expected, calculate.sumOfEven(3, 3));
   }
 
   @Test
   public void testAverage() {
     Calculate calculate = new Calculate();
     double expected = 3.0;
-    assertEquals(expected, calculate.average(2, 4), 0);
-    expected = 3.5;
-    assertEquals(expected, calculate.average(3, 4), 0);
+    assertEquals(expected, calculate.average(2, 4));
   }
 }

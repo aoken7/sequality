@@ -18,6 +18,6 @@ public class App {
         + new Calculate().printAve(1, 10));
 
     System.out.println(new Calculate().printSumOfOdd(1, 10)
-        + new Calculate().printSumOfEven(1, 10));
+        + new Calculate().printAve(x, y));
   }
 }

@@ -17,8 +17,6 @@ public class CalculateTest {
     Calculate calculate = new Calculate();
     int expected = 15;
     assertEquals(expected, calculate.sumOfSeq(1, 5));
-    expected = 3;
-    assertEquals(expected, calculate.sumOfSeq(3, 3));
   }
 
   @Test

@@ -16,7 +16,7 @@ public class Calculate {
   public int sumOfOdd(int s, int e) {
     int sum = 0;
     for (int i = s; i <= e; i++) {
-      if (i % 2 == 1) {
+      if (i % 2 == 0) {
         sum += i;
       }
     }
@@ -26,7 +26,7 @@ public class Calculate {
   public int sumOfEven(int s, int e) {
     int sum = 0;
     for (int i = s; i <= e; i++) {
-      if (i % 2 == 0) {
+      if (i % 2 == 1) {
         sum += i;
       }
     }
@@ -52,9 +52,5 @@ public class Calculate {
 
   public String printSumOfOdd(int s, int e) {
     return "Sum of odd of " + s + " to " + e + " is " + sumOfOdd(s, e) + ".";
-  }
-
-  public String printSumOfEven(int s, int e) {
-    return "Sum of even is " + sumOfEven(s, e) + ".";
   }
 }
